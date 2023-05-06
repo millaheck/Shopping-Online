@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="20dp"
+    android:background="#E4DDDD"
+    android:backgroundTint="#E4DDDD"
+    tools:context=".ItemProduct">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/material_dynamic_neutral30"
+            android:contentDescription="@string/product_image"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/NameProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productImage"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/product_name"
+            android:textAlignment="center"
+            android:textColor="@color/material_dynamic_neutral30"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NameProduct"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/price"
+            android:textColor="@color/material_dynamic_neutral30"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NameProduct"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/TextPrice"
+            android:text="@string/price_detail"
+            android:textColor="@color/material_dynamic_neutral50"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TextCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/category"
+            android:textColor="@color/material_dynamic_neutral30"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/TextCategory"
+            android:text="@string/category_detail"
+            android:textColor="@color/material_dynamic_neutral50"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextCategory"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:maxHeight="158dp"
+            android:text="@string/description"
+            android:textColor="@color/material_dynamic_neutral30"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/AddToCartButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#FF5722"
+            android:text="@string/add_to_cart"
+            android:textColor="@color/material_dynamic_neutral0"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+</RelativeLayout>
+
