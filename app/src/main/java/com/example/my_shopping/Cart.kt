@@ -34,7 +34,7 @@ class Cart : AppCompatActivity() {
     )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.id.cart_details)
+        setContentView(R.layout.cart_details)
         supportActionBar?.setTitle("My Shopping Cart")
 
         var totalPrice = 0.0;

@@ -88,7 +88,7 @@ class ProductAdapter(private val Products: ArrayList<ItemProduct>) : RecyclerVie
                 context.finish()
                 context.overridePendingTransition(0, 0)
             }
-            val intent = Intent(context, CartActivity::class.java)
+            val intent = Intent(context, Cart::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             context.startActivity(intent)
         }
@@ -106,7 +106,7 @@ class ProductAdapter(private val Products: ArrayList<ItemProduct>) : RecyclerVie
                     context.finish()
                     context.overridePendingTransition(0, 0)
                 }
-                val intent = Intent(context, CartActivity::class.java)
+                val intent = Intent(context, Cart::class.java)
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
                 context.startActivity(intent)
 
@@ -118,7 +118,7 @@ class ProductAdapter(private val Products: ArrayList<ItemProduct>) : RecyclerVie
                 context.finish()
                 context.overridePendingTransition(0, 0)
             }
-            val intent = Intent(context, CartActivity::class.java)
+            val intent = Intent(context, Cart::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             context.startActivity(intent)
         }
@@ -134,7 +134,7 @@ class ProductAdapter(private val Products: ArrayList<ItemProduct>) : RecyclerVie
                 context.finish()
                 context.overridePendingTransition(0, 0)
             }
-            val intent = Intent(context, CartActivity::class.java)
+            val intent = Intent(context, Cart::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             context.startActivity(intent)
         }

@@ -211,7 +211,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, UserProfile::class.java)
             startActivity(intent)
         } else if (selected == ("cart")) {
-            val intent = Intent(this@MainActivity, CartActivity::class.java)
+            val intent = Intent(this@MainActivity, Cart::class.java)
             startActivity(intent)
         } else if (selected == ("summary")) {
             val intent = Intent(this@MainActivity, OrderSummary::class.java)
