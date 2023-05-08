@@ -22,10 +22,11 @@ public class ProductCategoriesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_products_categories);
 
         recyclerViewCategory();
+        recyclerViewProduct();
     }
 
     private void recyclerViewCategory() {
-        LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        LinearLayoutManager LinearLayoutManager=new LinearLayoutManager(this, androidx.recyclerview.widget.LinearLayoutManager.HORIZONTAL, false);
         recyclerViewCategoryList=findViewById(R.id.recyclerView2);
         recyclerViewCategoryList.setLayoutManager(LinearLayoutManager);
 
@@ -39,8 +40,9 @@ public class ProductCategoriesActivity extends AppCompatActivity {
         recyclerViewCategoryList.setAdapter(adapter);
     }
     private void recyclerViewProduct(){
-        LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        LinearLayoutManager LinearLayoutManager=new LinearLayoutManager(this, androidx.recyclerview.widget.LinearLayoutManager.HORIZONTAL, false);
         recyclerViewProductList=findViewById(R.id.recyclerView1);
+        recyclerViewProductList.setLayoutManager(LinearLayoutManager);
 
         ArrayList<Product> products=new ArrayList<>();
         products.add(new Product("Dress", "dress", "Fancy Yellow Summer Dress", 100.00));
