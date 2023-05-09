@@ -75,7 +75,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
         ImageView categoryPic;
         ConstraintLayout mainLayout;
 
-        public ViewHolder(@NonNull View itemView){
+        public ViewHolder(@NonNull View itemView) {
             super(itemView);
             categoryName=itemView.findViewById(R.id.categoryName);
             categoryPic=itemView.findViewById(R.id.categoryPic);
